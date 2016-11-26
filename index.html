@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Iblog2 by a240277805</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Iblog2</h1>
+      <h2 class="project-tagline">基于 Node.js 的个人开源博客系统。</h2>
+      <a href="https://github.com/a240277805/iBlog2" class="btn">View on GitHub</a>
+      <a href="https://github.com/a240277805/iBlog2/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/a240277805/iBlog2/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="iblog2" class="anchor" href="#iblog2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>iBlog2</h1>
+
+<p>基于 Node.js 的个人开源博客系统，采用响应式布局，支持移动设备直接访问，功能全面，美观大方。<br>
+<em>不仅仅是博客，更是 Demo</em>，适合新人入门学习的完整项目。<br>
+（基于 ASP.NET 的版本请点击<a href="https://github.com/eshengsky/iBlog/">这里</a>）</p>
+
+<h2>
+<a id="在线实例" class="anchor" href="#%E5%9C%A8%E7%BA%BF%E5%AE%9E%E4%BE%8B" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>在线实例</h2>
+
+<p>个人博客 <a href="http://www.skysun.name/">http://www.skysun.name/</a></p>
+
+<h2>
+<a id="wiki" class="anchor" href="#wiki" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a href="https://github.com/eshengsky/iBlog2/wiki">Wiki</a>
+</h2>
+
+<p>整理了 iBlog2 中涉及 Node.js 及部分前端技术的基本功能与知识点，适合新手学习、备查。  </p>
+
+<h2>
+<a id="功能模块" class="anchor" href="#%E5%8A%9F%E8%83%BD%E6%A8%A1%E5%9D%97" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>功能模块</h2>
+
+<h4>
+<a id="博客" class="anchor" href="#%E5%8D%9A%E5%AE%A2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>博客</h4>
+
+<ul>
+<li>文章列表页<br>
+</li>
+<li>文章详细页<br>
+</li>
+</ul>
+
+<h4>
+<a id="留言" class="anchor" href="#%E7%95%99%E8%A8%80" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>留言</h4>
+
+<h4>
+<a id="关于" class="anchor" href="#%E5%85%B3%E4%BA%8E" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>关于</h4>
+
+<h4>
+<a id="后台管理" class="anchor" href="#%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>后台管理</h4>
+
+<ul>
+<li>网站统计<br>
+</li>
+<li>博客管理 - 新的文章<br>
+</li>
+<li>博客管理 - 分类管理<br>
+</li>
+<li>博客管理 - 文章管理<br>
+</li>
+<li>评论管理<br>
+</li>
+<li>留言管理<br>
+</li>
+<li>关于管理<br>
+</li>
+<li>缓存管理<br>
+</li>
+<li>异常管理<br>
+</li>
+<li>系统设置<br>
+</li>
+</ul>
+
+<h2>
+<a id="技术构成" class="anchor" href="#%E6%8A%80%E6%9C%AF%E6%9E%84%E6%88%90" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>技术构成</h2>
+
+<ul>
+<li>服务端 <a href="https://nodejs.org/">Node.js</a>
+</li>
+<li>web框架 <a href="http://expressjs.com/">Express 4</a>
+</li>
+<li>模板引擎 <a href="http://jade-lang.com/">Jade</a>
+</li>
+<li>JS库 <a href="http://jquery.com/">jQuery</a>
+</li>
+<li>UI库 <a href="http://getbootstrap.com/">Bootstrap 3</a>
+</li>
+<li>持久化 <a href="https://www.mongodb.org/">MongoDB</a>
+</li>
+<li>缓存 <a href="http://redis.io/">Redis</a>
+</li>
+<li>日志 <a href="https://github.com/winstonjs/winston/">winston</a>
+</li>
+</ul>
+
+<h2>
+<a id="快速开始" class="anchor" href="#%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>快速开始</h2>
+
+<h4>
+<a id="准备条件" class="anchor" href="#%E5%87%86%E5%A4%87%E6%9D%A1%E4%BB%B6" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>准备条件</h4>
+
+<p>安装最新版<a href="https://nodejs.org/en/download/">Node.js</a>、<a href="http://bower.io/">bower</a>、<a href="https://www.mongodb.org/downloads/">MongoDB</a>、<a href="http://redis.io/download/">Redis</a>。<br>
+（注：如果使用Windows平台，可以去<a href="https://github.com/MSOpenTech/redis/releases">https://github.com/MSOpenTech/redis/releases</a>下载安装Redis）</p>
+
+<h4>
+<a id="安装依赖" class="anchor" href="#%E5%AE%89%E8%A3%85%E4%BE%9D%E8%B5%96" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>安装依赖</h4>
+
+<ul>
+<li>服务端依赖<br>
+</li>
+</ul>
+
+<div class="highlight highlight-source-shell"><pre>$ npm install</pre></div>
+
+<ul>
+<li>客户端依赖<br>
+</li>
+</ul>
+
+<div class="highlight highlight-source-shell"><pre>$ bower install</pre></div>
+
+<h4>
+<a id="参数配置" class="anchor" href="#%E5%8F%82%E6%95%B0%E9%85%8D%E7%BD%AE" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>参数配置</h4>
+
+<p>根据实际情况修改 config.json 配置文件，DbPath 是MongoDB路径，RedisHost 是Redis所在ip，RedisPort 是Redis端口号。  </p>
+
+<div class="highlight highlight-source-json"><pre>{
+  <span class="pl-s"><span class="pl-pds">"</span>DbPath<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>mongodb://localhost/iBlog2<span class="pl-pds">"</span></span>,
+  <span class="pl-s"><span class="pl-pds">"</span>RedisHost<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>127.0.0.1<span class="pl-pds">"</span></span>,
+  <span class="pl-s"><span class="pl-pds">"</span>RedisPort<span class="pl-pds">"</span></span>: <span class="pl-c1">6379</span>
+}</pre></div>
+
+<p>后台管理员账号信息在 config/account.json 中配置，默认管理员账号 admin ，密码 123456 ，密码需<a href="http://md5jiami.51240.com/">md5加密</a>存储。</p>
+
+<div class="highlight highlight-source-json"><pre>{
+  <span class="pl-s"><span class="pl-pds">"</span>Id<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>1<span class="pl-pds">"</span></span>,
+  <span class="pl-s"><span class="pl-pds">"</span>UserName<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>admin<span class="pl-pds">"</span></span>,
+  <span class="pl-s"><span class="pl-pds">"</span>Password<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>e10adc3949ba59abbe56e057f20f883e<span class="pl-pds">"</span></span>
+}</pre></div>
+
+<p>在 "后台管理-系统设置" 页面中，支持以可视化方式配置其余参数。</p>
+
+<h4>
+<a id="启动站点" class="anchor" href="#%E5%90%AF%E5%8A%A8%E7%AB%99%E7%82%B9" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>启动站点</h4>
+
+<ul>
+<li>方式1：普通模式启动</li>
+</ul>
+
+<div class="highlight highlight-source-shell"><pre>$ node --harmony-proxies ./bin/www </pre></div>
+
+<ul>
+<li>方式2：快速启动</li>
+</ul>
+
+<div class="highlight highlight-source-shell"><pre>$ npm start</pre></div>
+
+<ul>
+<li>方式3：守护进程启动<br>
+<em>守护进程能够发挥多核CPU性能，并在出现异常退出后延迟30秒自动重启工作进程。</em>
+</li>
+</ul>
+
+<div class="highlight highlight-source-shell"><pre>$ node --harmony-proxies daemon.js</pre></div>
+
+<p>打开浏览器，访问 <a href="http://localhost:3000">http://localhost:3000/</a></p>
+
+<h4>
+<a id="enjoy-it-smile" class="anchor" href="#enjoy-it-smile" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Enjoy it! <g-emoji alias="smile" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png" ios-version="6.0">😄</g-emoji>
+</h4>
+
+<h2>
+<a id="关于缓存" class="anchor" href="#%E5%85%B3%E4%BA%8E%E7%BC%93%E5%AD%98" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>关于缓存</h2>
+
+<p>文章分类、文章列表、文章详细等都作了缓存处理，若想使修改立即可见，需要在"后台管理-缓存管理"页面手动清除缓存。</p>
+
+<h2>
+<a id="线上部署" class="anchor" href="#%E7%BA%BF%E4%B8%8A%E9%83%A8%E7%BD%B2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>线上部署</h2>
+
+<p>推荐使用 <a href="https://github.com/Unitech/pm2">pm2</a> 进行线上Node.js的进程管理和持久运行。</p>
+
+<h4>
+<a id="安装" class="anchor" href="#%E5%AE%89%E8%A3%85" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>安装</h4>
+
+<div class="highlight highlight-source-shell"><pre>$ npm install -g pm2</pre></div>
+
+<h4>
+<a id="使用" class="anchor" href="#%E4%BD%BF%E7%94%A8" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>使用</h4>
+
+<div class="highlight highlight-source-shell"><pre>$ pm2 start ./bin/www --node-args=<span class="pl-s"><span class="pl-pds">"</span>--harmony-proxies<span class="pl-pds">"</span></span></pre></div>
+
+<h2>
+<a id="贡献者们" class="anchor" href="#%E8%B4%A1%E7%8C%AE%E8%80%85%E4%BB%AC" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>贡献者们</h2>
+
+<p>感谢给 iBlog2 项目贡献代码的朋友，感谢他们的支持，详情<a href="https://github.com/eshengsky/iBlog2/graphs/contributors">点击这里</a>。</p>
+
+<h2>
+<a id="许可协议" class="anchor" href="#%E8%AE%B8%E5%8F%AF%E5%8D%8F%E8%AE%AE" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>许可协议</h2>
+
+<p>The MIT License (MIT)</p>
+
+<p>Copyright (c) 2016 Sky</p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/a240277805/iBlog2">Iblog2</a> is maintained by <a href="https://github.com/a240277805">a240277805</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
